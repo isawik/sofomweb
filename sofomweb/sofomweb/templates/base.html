@@ -1,0 +1,19 @@
+{% load staticfiles %}
+
+<!doctype html>
+<html lang="es-mx">
+<head>
+	<meta charset="UTF-8">
+	<link rel="shortcut icon" href="{{ STATIC_URL }}img/favicon.ico" />
+   	<meta name="viewport" content="width=device-width, maximum-scale=1">
+    <title>{% block title %}{% endblock %}</title>
+	<link rel="stylesheet" href="{{ STATIC_URL }}css/thrive.css">
+</head>
+<body>
+	{% block content %}
+	{% endblock %}
+
+	
+
+</body>
+</html>
